@@ -14,6 +14,7 @@
     <h1 >{{$title}}</h1>
     <div>
         {{$slot}} <!-- quem vai ser substituido pelo conteúdo -->
+        <img src="../images/img.png" alt="" srcset="">
     </div>
 </body>
 
