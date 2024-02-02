@@ -15,6 +15,11 @@ class cadastrarUsuario extends Controller
         return view('paginas.cadastrar')->With('dados', $dados);
     } //fim do método index 
 
+    public function home()
+    {
+        return view('paginas.home');
+    } //fim do método index 
+
     public function store(Request $request)
     { // store envia pro banco de dados
         $emailUsuario = $request->input('email'); // coletando dados do formulário
@@ -25,6 +30,7 @@ class cadastrarUsuario extends Controller
         $model->password = $passwordUsuario;
         $model->save(); //armazenar os dados no bd
 
-        return redirect('/cadastrar');
+        return redirect('/home');
     } // fim do metodo
+
 }
