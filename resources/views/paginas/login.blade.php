@@ -1,23 +1,19 @@
 <x-layout>
 
     <!-- conteudo -->
-    <div class="row align-items-start" style="margin:30px;">
+    <div class="row align-items-start" style="margin:30px; border-radius:2%;">
         <div class="col-4 text-white">
-
+            
         </div>
         <!-- primeira coluna -->
-        <div class="col">
-            <div class="col-4">
-
-            </div>
-
+        <div class="col-3">
             <div class="card  mb-3 0 text-white"
-                style="max-width: 18rem; background:#7A4989; margin:20px; opacity: 0.8; width:400px;">
+                style="max-width: 18rem; background:#81689D; margin:20px; opacity: 0.9;">
 
                 <div class="card-header ">Cadastro</div>
                 <div class="card-body">
                     <form action="/cadastrar/salvar" method="POST" class="row g-3 text-white "
-                        style="background:#7A4989;">
+                        style="background:#81689D;">
                         @csrf <!-- valida o formulário -->
                         <div class="col-md-10 text-start">
                             <label for="inputEmail" class="form-label ">Email</label>
@@ -53,7 +49,7 @@
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 text-white">
 
         </div>
 
