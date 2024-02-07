@@ -18,3 +18,6 @@ Route::post('/cadastrar/salvar', [\App\Http\Controllers\cadastrarUsuario::class,
 Route::get('/home', [\App\Http\Controllers\cadastrarUsuario::class,'home']);
 Route::get('/note', [\App\Http\Controllers\notasController::class,'note']);
 Route::post('/note/salvar', [\App\Http\Controllers\notasController::class, 'store']);
+Route::get('/editar/{id}', [\App\Http\Controllers\notasController::class, 'editar']);
+Route::get('/atualizar/{id}', [\App\Http\Controllers\notasController::class, 'atualizar']);
+Route::get('/excluir/{id}',[\App\Http\Controllers\notasController::class, 'excluir']);
